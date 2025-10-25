@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Shop">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="AddStock"  minOccurs="0">
+                    <xs:complexType>
+                        <xs:attribute name="Client" type="xs:string"></xs:attribute>
+                        <xs:attribute name="Value" type="xs:string" use="required"></xs:attribute>
+                        <xs:attribute name="cond" type="xs:string"  use="required" ></xs:attribute>
+                        <xs:attribute name="Return" type="xs:string"></xs:attribute>
+                        <xs:attribute name="break" type="xs:string"></xs:attribute>
+                        <xs:attribute name="Action" type="xs:string" use="required"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="ReturnBase">
+                    <xs:complexType>
+                        <xs:attribute name="ReturnBase"></xs:attribute>
+                        <xs:attribute name="ref"></xs:attribute>
+                        <xs:attribute name="ValorCompra"></xs:attribute>
+                        <xs:attribute name="Value" type="xs:string" use="required"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

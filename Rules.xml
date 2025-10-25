@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shop  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Rules.XSD">
+    <AddStock Value="@x" cond=">1"  Return="@item : Invalid  @x in Stock" Action="ReturnBase" break="cond=False"  ></AddStock>
+    <ReturnBase ref="AddStock.cond" ValorCompra="@valor" Value="@x"  ReturnBase="@x Valor adicionado"></ReturnBase>
+</Shop>
